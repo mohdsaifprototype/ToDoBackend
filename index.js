@@ -10,9 +10,7 @@ const MONGO = process.env.MONGOURL;
 app.use(express.json());
 
 app.use(
-  cors({
-    origin: "*",
-  })
+  cors()
 );
 
 mongoose.connect(MONGO, {
